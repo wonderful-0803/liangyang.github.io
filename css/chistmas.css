@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Changa+One);
+body {
+    font-family: "Changa One", sans-serif;
+    background: #d35e4f;
+}
+.main {
+    margin: 0 auto;
+    display: table;
+}
+.main2 {
+    z-index: 100;
+    margin: -500px auto 0;
+    display: table;
+}
+form {
+    position: absolute;
+    margin: -283px 0 0 235px;
+    z-index: 300;
+}
+form p,
+form .confirm {
+    font-size: 38px;
+    color: #293524;
+}
+form input {
+    margin-top: -10px;
+    padding: 10px;
+    font-family: "Lato";
+}
+form input[type="text"] {
+    width: 75%;
+    box-shadow: none;
+    appearance: none;
+    border: none;
+    background: #dee8da;
+}
+form input[type="submit"] {
+    width: 19%;
+    border: none;
+    appearance: none;
+    background: #9ec187;
+    color: white;
+    transition: 0.25s all ease;
+}
+form input[type="submit"]:hover {
+    transition: 0.5s all ease;
+    background: #7aad58;
+    transform: translateY(-1px);
+}
+.confirm {
+    text-align: center;
+    margin-top: -75px;
+}
+.light {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    z-index: 20;
+    margin-top: -460px;
+    margin-left: 321px;
+    box-shadow: 0px 0px 10px 10px lightyellow;
+}
+.dialog-text {
+    width: 150px;
+    font-size: 30px;
+    margin: 92px 0 0 721px;
+    color: #b67061;
+    opacity: 0.9;
+}
+.hide {
+    animation: hidestuff 1s ease both;
+    transform: translateZ(0);
+}
+@keyframes hidestuff {
+    100% {
+        transform: scaleY(0);
+    }
+}
+.show {
+    animation: showstuff 1s 0.9s ease both;
+    transform: translateZ(0);
+    transform: scaleY(1);
+}
+@keyframes showstuff {
+    0% {
+        transform: scaleY(0);
+    }
+}
